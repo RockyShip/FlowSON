@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "description": "An app to organize thoughts, designed around JSON",
-  "homepage": "https://github.com/RockyShip/FlowSON",
   "license": "UNLICENSED",
   "devDependencies": {
     "react-scripts": "^0.6.0"
