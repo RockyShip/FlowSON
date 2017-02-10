@@ -1,6 +1,7 @@
-import os
+from os import system
 
-os.system("npm run build")
+# Modify index.html to be able to run directly in electron without a server
+system("npm run build")
 
 f = open("./build/index.html", "r");
 
@@ -16,5 +17,10 @@ f = open("./build/index.html", "w");
 
 f.write(contents)
 f.close()
+print("Fixed index.html script source")
+
+# Compile LESS into css
+system("./node_modules/.bin/lessc ./public/styles/main.less ./build/styles/main.css")
+print("Compiled LESS into CSS")
 
 print("Building Done")

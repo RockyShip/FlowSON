@@ -4,8 +4,10 @@
   "private": true,
   "description": "An app to organize thoughts, designed around JSON",
   "license": "UNLICENSED",
+  "main": "src/main.js",
   "devDependencies": {
-    "react-scripts": "^0.6.0"
+    "react-scripts": "^0.6.0",
+    "less": "^2.7.2"
   },
   "dependencies": {
     "electron": "^1.4.10",
@@ -13,7 +15,7 @@
     "react-dom": "^15.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "./node_modules/.bin/electron src/main.js",
     "build": "react-scripts build"
   }
 }
