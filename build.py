@@ -6,7 +6,9 @@ f = open("./build/index.html", "r");
 
 contents = f.read()
 
-contents = contents.replace("<script type=\"text/javascript\" src=\"/static/js/main", "<script type=\"text/javascript\" src=\"./static/js/main")
+contents = contents.replace("<script type=\"text/javascript\" "
+                            "src=\"/static/js/main", "<script "
+                            "type=\"text/javascript\" src=\"./static/js/main")
 
 f.close()
 
