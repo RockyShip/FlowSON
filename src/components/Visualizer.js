@@ -1,7 +1,7 @@
 import React from 'react'
 
 function List(props){
-//TODO lists of lists 
+//TODO lists of lists
 	let html = [];
 	for (var key in props.data) {
 	  	if (props.data.hasOwnProperty(key)) {
@@ -9,7 +9,7 @@ function List(props){
  		}
 	}
 	return(
-		<div>
+		<div id="Visualizer">
 			<ul>
 			{html}
 			</ul>

@@ -5,7 +5,7 @@ const url = require('url')
 let win
 
 function createWindow(){
-	win = new BrowserWindow({width:400, height:300})
+	win = new BrowserWindow({width:900, height:500})
 	win.loadURL(url.format({
 		pathname: path.join(__dirname, '../build/index.html'),
 		protocol: 'file:',
@@ -30,4 +30,3 @@ app.on('activate', () => {
 		createWindow()
 	}
 })
-
